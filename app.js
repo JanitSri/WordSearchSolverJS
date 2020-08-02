@@ -43,29 +43,6 @@ var currentCol = 0;
 
 
 ctx.lineWidth = 3;
-
-/*
-// DIAGONAL LINE --- top left to bottom right 
-var startCoords = [0,0];
-var endCoords = [2,2]; 
-circleWord.diagonalRight(ctx, cellSize, startCoords, endCoords);
-
-// DIAGONAL LINE --- top right to bottom left
-var startCoords = [1,4];
-var endCoords = [3,2]; 
-circleWord.diagonalLeft(ctx, cellSize, startCoords, endCoords);
-
-// VERTICAL LINE 
-var startCoords = [0,1];
-var endCoords = [4,1]; 
-circleWord.vertical(ctx, cellSize, startCoords, endCoords);
-
-// HORIZONTAL LINE 
-var startCoords = [0,0];
-var endCoords = [0,4]; 
-circleWord.horizontal(ctx, cellSize, startCoords, endCoords);
-*/
-
 let wordSearchAnswers = move(wordSearch, wordBank);
 let circleWordChoice = [circleWord.horizontal, circleWord.vertical, circleWord.diagonalRight];
 let circleWordColor = ["#FF0000", "#0000FF", "#228B22"];
@@ -80,8 +57,6 @@ for(let i = 0; i < wordSearchAnswers.length; i++){
   }
 }
 
-ctx.strokeStyle = "#000000";
-ctx.lineWidth = 1;
 
 
 
